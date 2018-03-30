@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Пользователи
+{% endblock %}
+
+{% block content %}
+    Информация о пользователе<br><br>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Password</th>
+        </tr>
+        <tr>
+            <td>{{ item.usr_id }}</td>
+            <td>{{ item.usr_name }}</td>
+            <td>{{ item.usr_pass }}</td>
+        </tr>
+    </table>
+{% endblock %}
